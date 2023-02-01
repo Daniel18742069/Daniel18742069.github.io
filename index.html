@@ -9,43 +9,67 @@
     <title>Document</title>
 </head>
 
-<body>
-        <nav class="navbar">
-            <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <ul class="menu-items">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a class="tickets" href="#ticket">Tickets</a></li>
-                    <li><a href="#infos">Infos & FAQ</a></li>
-                    <li><a class="nav-right" href="#sponsors">Sponsors</a></li>
-                    <li><a class="nav-right" href="#contact">Contact</a></li>
-                </ul>
+<body class="fullpage">
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
-        </nav>
-        <div class="home">
-            <h1 id="home">Home</h1>
+            <ul class="menu-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a class="tickets" href="#ticket">Tickets</a></li>
+                <li><a href="#infos">Infos & FAQ</a></li>
+                <li><a class="nav-right" href="#sponsors">Sponsors</a></li>
+                <li><a class="nav-right" href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="about">
+    </nav>
+    <div class="grid-container">
+
+        <section class="home" id="section_0">
+            <h1 id="home"></h1>
+        </section>
+
+        <section class="about" id="section_1">
             <h1 id="about">About</h1>
-        </div>
-        <div class="ticket">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </section>
+
+        <section class="ticket" id="section_2">
             <h1 id="ticket">Tickets</h1>
-        </div>
-        <div class="infos">
+            <p>
+                Kaufen Sie Tickets, bitte!
+            </p>
+            <div class="buyTickets">
+                <button class="btn_buyTickets">Buy Tickets</button>
+            </div>
+        </section>
+
+        <section class="infos" id="section_3">
             <h1 id="infos">Infos & FAQ</h1>
-        </div>
-        <div class="sponsors">
+        </section>
+
+        <section class="sponsors" id="section_4">
             <h1 id="sponsors">Sponsors</h1>
-        </div>
-        <div class="contact">
+        </section>
+
+        <section class="contact" id="section_5">
             <h1 id="contact">Contact</h1>
-        </div>
+        </section>
+
+    </div>
+
 </body>
 
 </html>
