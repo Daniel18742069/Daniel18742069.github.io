@@ -4,7 +4,6 @@ $gradient-color: #e1e1e5;
 $text-color: #1d2733;
 
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 
@@ -31,6 +30,7 @@ html {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    
 
     //Navbar
     .navbar {
@@ -141,8 +141,20 @@ html {
 
     .home {
         //border: 2px red solid;
-        background: #1B2430 url('../img/RUMBLING_1920_1080.png') center/cover no-repeat !important;
         text-align: center;
+
+        .parallax {
+            // background: #1B2430 url('../img/RUMBLING\ \(3\).png') center/cover no-repeat !important;
+            background-size: cover;
+            // height: 1080px;
+            // width: 1920px;
+            // margin: 0px 2px 0px 2px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            backdrop-filter: 10px;
+            // background-size: cover;
+          }
 
     }
 
@@ -155,12 +167,10 @@ html {
         // bottom: 0;
         // left: 0;
 
+        width: 100%;
         display: grid;
         grid-column: 1 / 2;
         grid-row: 2 / 2;
-
-
-        p {}
 
     }
 
@@ -223,7 +233,7 @@ html {
 
         .container {
             background-color: white;
-            color: black;
+            color: $text-color;
             border-radius: 20px;
             box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.25);
             margin: 20px 0;
