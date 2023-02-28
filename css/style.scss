@@ -55,64 +55,60 @@ html {
     //Navbar
     .navbar {
         input[type="checkbox"] {
-            display: none;
+          display: none;
         }
-
+      
         .hamburger-lines {
-            display: none;
+          display: none;
         }
-
-        //box-shadow: 0px 5px 10px 0px #aaa;
-        box-shadow: 0px 1px 2px rgba(0, 255, 255, 0.3),
-        0px 2px 4px rgba(0, 255, 157, 0.3),
-        0px 4px 8px rgba(0, 255, 21, 0.3),
-        0px 8px 16px rgba(0, 255, 255, 0.3);
+      
         position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 64px;
         background-color: $bg-color2;
-        color: $bg-color;
-        opacity: 0.9;
         z-index: 100;
-
+      
         a {
-            color: #fff;
-            text-decoration: none;
-            background:
-                linear-gradient(to right,
-                    $bg-color2,
-                    $bg-color2 ),
-                linear-gradient(to right,
-                    $gradient-color,
-                    $gradient-color,
-                    $gradient-color );
-            background-size: 100% 2.5px, 0 2.5px;
-            background-position: 100% 100%, 0 100%;
-            background-repeat: no-repeat;
-            transition: background-size 400ms;
+          color: #fff;
+          text-decoration: none;
+          background:
+            linear-gradient(to right,
+              $bg-color2,
+              $bg-color2 ),
+            linear-gradient(to right,
+              $gradient-color,
+              $gradient-color,
+              $gradient-color );
+          background-size: 100% 2.5px, 0 2.5px;
+          background-position: 100% 100%, 0 100%;
+          background-repeat: no-repeat;
+          transition: background-size 400ms;
         }
-
+      
         a:hover {
-            background-size: 0 2.5px, 100% 2.5px;
+          background-size: 0 2.5px, 100% 2.5px;
         }
-
+      
         .tickets {
-            font-weight: 600;
-            text-decoration: none;
-            background:
-                linear-gradient(to right,
-                    $bg-color2,
-                    $bg-color2 ),
-                linear-gradient(to right,
-                    rgba(255, 0, 0, 1),
-                    rgba(255, 0, 180, 1),
-                    rgba(0, 100, 200, 1));
-            background-size: 100% 2.5px, 0 2.5px;
-            background-position: 100% 100%, 0 100%;
-            background-repeat: no-repeat;
-            transition: background-size 400ms;
+          font-weight: 600;
+          text-decoration: none;
+          background:
+            linear-gradient(to right,
+              $bg-color2,
+              $bg-color2 ),
+            linear-gradient(to right,
+              rgba(255, 0, 0, 1),
+              rgba(255, 0, 180, 1),
+              rgba(0, 100, 200, 1));
+          background-size: 100% 2.5px, 0 2.5px;
+          background-position: 100% 100%, 0 100%;
+          background-repeat: no-repeat;
+          transition: background-size 400ms;
         }
-
-    }
+      }
+      
 
     .navbar-container {
         display: flex;
@@ -321,16 +317,16 @@ html {
 
         .splide {
             margin: 0 auto;
-          }
-    
-          .thumbnails {
+        }
+
+        .thumbnails {
             display: flex;
             margin: 1rem auto 0;
             padding: 0;
             justify-content: center;
-          }
-    
-          .thumbnail {
+        }
+
+        .thumbnail {
             width: 150px;
             height: auto;
             overflow: hidden;
@@ -338,105 +334,140 @@ html {
             margin: 0 0.2rem;
             cursor: pointer;
             opacity: 0.3;
-          }
-    
-          .thumbnail.is-active {
-            opacity: 1;
-          }
-    
-          .thumbnail img {
-            width: 100%;
-            height: auto;
-          }
         }
 
-        // .slider {
-        //     background: rgb(255, 5, 5);
-        //     height: 75pt;
-        //     margin: 0 auto;
-        //     overflow: hidden;
-        //     position: relative;
-        //     cursor: default;
-        //     user-select: none;
-        //     touch-action: none
-        // }
+        .thumbnail.is-active {
+            opacity: 1;
+        }
 
-        // .slider:before {
-        //     left: 0;
-        //     top: 0
-        // }
-
-        // .slider:after {
-        //     right: 0;
-        //     top: 0;
-        //     transform: rotateZ(180deg)
-        // }
-
-        // .slider:after,
-        // .slider:before {
-        //     background: linear-gradient(to right, #efeef2 0, hsla(0, 0%, 100%, 0) 100%);
-        //     content: "";
-        //     height: 75pt;
-        //     position: absolute;
-        //     width: 200px;
-        //     z-index: 2
-        // }
-
-        // .slider .slide-track-1 {
-        //     animation: scroll-l 10s linear infinite;
-        //     animation-delay: 0s;
-        //     animation-fill-mode: forwards;
-        //     display: flex;
-        //     width: 1800px
-        // }
-
-        // // .slider .slide-track-2 {
-        // //     animation: scroll-r 30s linear infinite;
-        // //     display: flex;
-        // //     width: 3500px;
-        // // }
-
-        // .slider .slide {
-        //     height: 75pt;
-        //     width: 2500px;
-        //     display: flex;
-        //     align-items: center;
-        //     text-align: center
-        // }
-
-        // .slider .slide img {
-        //     width: 180px;
-        //     padding: 5pc;
-        //     vertical-align: middle;
-        //     margin: 0 auto;
-        //     display: inline-block;
-        //     max-width: 100%;
-        //     height: auto
-        // }
-
-    //     @keyframes scroll-l {
-    //         0% {
-    //             transform: translateX(0)
-    //         }
-
-    //         100% {
-    //             transform: translateX(calc(-300px * 4))
-    //         }
-    //     }
-
-    //     @keyframes scroll-r {
-    //         100% {
-    //             transform: translateX(0)
-    //         }
-
-    //         0% {
-    //             transform: translateX(calc(-300px * 4))
-    //         }
-    //     }
-
-    // }
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+    }
 
     @media (max-width: 768px) {
+
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            height: 64px;
+            align-items: center;
+        }
+
+        .menu-items {
+            order: 2;
+            display: flex;
+
+            li {
+                list-style: none;
+                margin-left: 1.5rem;
+                font-size: 1.3rem;
+            }
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            gap: 10px 10px;
+
+            section {
+                height: 100vh;
+                scroll-snap-align: start;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+
+                h1 {
+                    color: $text-color;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+
+            }
+
+        }
+
+
+
+        .home {
+            text-align: center;
+
+            .parallax {
+                background: #1B2430 url('../img/RUMBLING\ \(3\).png') center/cover no-repeat !important;
+                background-size: cover;
+                height: 100vh;
+                margin: 0px 2px 0px 2px;
+                background-position: center;
+                background-repeat: no-repeat;
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        .about {
+            display: grid;
+
+            p {
+                color: #1d2733;
+                word-break: break-word;
+            }
+        }
+
+        .ticket {
+            display: grid;
+
+            p {
+                color: #1d2733;
+            }
+
+            .buyTickets {
+                .btn_buyTickets {
+                    -webkit-text-size-adjust: 100%;
+                    -webkit-font-smoothing: antialiased;
+                    font: inherit;
+                    overflow: visible;
+                    text-transform: none;
+                    display: inline-block;
+                    border: 0px;
+                    color: rgb(255, 255, 255);
+                    background: rgb(209, 65, 12);
+                    padding: 12px 24px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    font-weight: bold;
+                    font-family: Helvetica;
+                    margin: 0px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .infos {
+            display: grid;
+
+            .wrapper-faq {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            h1 {
+                margin-bottom: 20px;
+            }
+
+            .container {
+                background-color: white;
+                color: $text-color;
+                border-radius: 20px;
+                box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+                margin: 20px 0;
+            }
+        }
+
         .navbar {
             opacity: 0.95;
 
@@ -587,3 +618,4 @@ html {
     }
 
 }
+
