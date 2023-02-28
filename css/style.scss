@@ -55,13 +55,13 @@ html {
     //Navbar
     .navbar {
         input[type="checkbox"] {
-          display: none;
+            display: none;
         }
-      
+
         .hamburger-lines {
-          display: none;
+            display: none;
         }
-      
+
         position: fixed;
         top: 0;
         left: 0;
@@ -69,46 +69,46 @@ html {
         height: 64px;
         background-color: $bg-color2;
         z-index: 100;
-      
+
         a {
-          color: #fff;
-          text-decoration: none;
-          background:
-            linear-gradient(to right,
-              $bg-color2,
-              $bg-color2 ),
-            linear-gradient(to right,
-              $gradient-color,
-              $gradient-color,
-              $gradient-color );
-          background-size: 100% 2.5px, 0 2.5px;
-          background-position: 100% 100%, 0 100%;
-          background-repeat: no-repeat;
-          transition: background-size 400ms;
+            color: #fff;
+            text-decoration: none;
+            background:
+                linear-gradient(to right,
+                    $bg-color2,
+                    $bg-color2 ),
+                linear-gradient(to right,
+                    $gradient-color,
+                    $gradient-color,
+                    $gradient-color );
+            background-size: 100% 2.5px, 0 2.5px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 400ms;
         }
-      
+
         a:hover {
-          background-size: 0 2.5px, 100% 2.5px;
+            background-size: 0 2.5px, 100% 2.5px;
         }
-      
+
         .tickets {
-          font-weight: 600;
-          text-decoration: none;
-          background:
-            linear-gradient(to right,
-              $bg-color2,
-              $bg-color2 ),
-            linear-gradient(to right,
-              rgba(255, 0, 0, 1),
-              rgba(255, 0, 180, 1),
-              rgba(0, 100, 200, 1));
-          background-size: 100% 2.5px, 0 2.5px;
-          background-position: 100% 100%, 0 100%;
-          background-repeat: no-repeat;
-          transition: background-size 400ms;
+            font-weight: 600;
+            text-decoration: none;
+            background:
+                linear-gradient(to right,
+                    $bg-color2,
+                    $bg-color2 ),
+                linear-gradient(to right,
+                    rgba(255, 0, 0, 1),
+                    rgba(255, 0, 180, 1),
+                    rgba(0, 100, 200, 1));
+            background-size: 100% 2.5px, 0 2.5px;
+            background-position: 100% 100%, 0 100%;
+            background-repeat: no-repeat;
+            transition: background-size 400ms;
         }
-      }
-      
+    }
+
 
     .navbar-container {
         display: flex;
@@ -618,4 +618,3 @@ html {
     }
 
 }
-
